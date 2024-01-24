@@ -17,7 +17,7 @@ class Square:
     @property
     def size(self):
         """a getter method"""
-        return self.__size
+        return (self.__size)
 
     @size.setter
     def size(self, value):
@@ -30,7 +30,7 @@ class Square:
     def area(self):
         """Returns the current square area"""
         a = self.__size * self.__size
-        return a
+        return (a)
 
     def my_print(self):
         """Prints # based on the value of size"""
