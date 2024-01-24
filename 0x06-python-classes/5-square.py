@@ -1,9 +1,11 @@
 #!/usr/bin/python3
+
 """This defines the Square class"""
 
 
 class Square:
     """This class has a private field entry."""
+
     def __init__(self, size=0):
         """
         Initializes the data
