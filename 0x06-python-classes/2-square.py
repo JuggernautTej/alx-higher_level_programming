@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This square defiens a Square class"""
 
+
 class Square:
     """This class has a private field entry."""
     def __init__(self, size=0):
