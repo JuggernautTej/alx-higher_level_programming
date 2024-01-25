@@ -1,16 +1,16 @@
 #!/usr/bin/python3
 
-"""This defines the Square class"""
+"""This defines the Square class."""
 
 
 class Square:
     """This class has a private field entry."""
 
-    def __init__(self, size=0):
+    def __init__(self, size):
         """
         Initializes the data
         Args:
-        size (int): size of the square
+        size (int): size of the square.
         """
         self.__size = size
 
@@ -28,14 +28,14 @@ class Square:
         else.__size = value
 
     def area(self):
-        """Returns the current square area"""
+        """Returns the current square area."""
         a = self.__size * self.__size
         return (a)
 
     def my_print(self):
         """Prints # based on the value of size"""
         if self.__size == 0:
-            print()
+            print("")
         else:
             for x in range(self.__size):
                 print("#" * self.__size)
