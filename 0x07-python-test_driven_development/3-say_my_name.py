@@ -9,7 +9,6 @@ def say_my_name(first_name, last_name=""):
     Args:
     first_name (string): The first parameter
     last_name (string): The second parameter
-    
     Returns:
     Nothing.
     """
