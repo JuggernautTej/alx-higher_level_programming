@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 """This houses the add_integer function along with its definition"""
 
 
@@ -18,5 +18,9 @@ def add_integer(a, b=98):
         raise TypeError("a must be an integer")
     if not (isinstance(b, (int, float)) and b is not None):
         raise TypeError("b must be an integer")
-    result = int(a) + int(b)
-    return result
+    result = a + b
+    max_float = 1.8e308
+    min_float = -1.8e308
+    if result > max_float or result < min_float:
+        raise OverflowError
+    return int(result)
