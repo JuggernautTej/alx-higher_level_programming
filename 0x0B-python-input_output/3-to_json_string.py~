@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+"""This function returns the JSON representation
+of a string"""
+import json
+
+
+def to_json_string(my_obj):
+    """This function returns the JSON representation
+    of a string.
+    Args:
+        my_obj(str): the string object
+        
+    Returns:
+        JSON representation.
+    """
+    json_string = json.dumps(my_obj)
+    return json_string
