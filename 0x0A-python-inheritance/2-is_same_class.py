@@ -4,5 +4,13 @@ of or the object is an instance of a class"""
 
 
 def is_kind_of_class(obj, a_class):
-    """Returns True or False"""
+    """The function returns True if the object is an instance
+    or False if otherwise.
+    Args:
+    obj: the object
+    a_class: the class to check against.
+
+    Returns:
+    True or False.
+    """
     return isinstance(obj, a_class)
