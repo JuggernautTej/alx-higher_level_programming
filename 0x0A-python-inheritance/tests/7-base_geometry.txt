@@ -1,0 +1,49 @@
+The ``BaseGeometry`` class
+======================
+
+Using ``BaseGeometry``
+-------------------
+
+This gives details on the BaseGeometry function. First import
+``BaseGeometry`` from the ``base_geometry`` module:
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Now use it:
+
+    >>> bg = BaseGeometry() 
+    >>> try:
+    ...     result = bg.area()
+    ...     if result is not None:
+    ...         print(result)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [Exception] area() is not implemented
+    
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("my_int", 12)
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("width", 89) 
+    
+    >>> bg = BaseGeometry()
+    >>> try:
+    ...     bg.integer_validator("name", "John")
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] name must be an integer
+
+    >>> bg = BaseGeometry()
+    >>> try:
+    ...     bg.integer_validator("age", 0)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [ValueError] age must be greater than 0
+
+    >>> try:
+    ...     bg.integer_validator("distance", -4)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [ValueError] distance must be greater than 0
+    
