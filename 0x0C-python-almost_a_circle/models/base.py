@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This class defines a rectangle as an empty class.
+"""This class defines a base class.
 """
 
 
