@@ -103,3 +103,28 @@ class Rectangle(Base):
         """This returns a specific string"""
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args, **kwargs):
+        """This method assigns an argument to each attribute"""
+        args_nos = len(args)
+        if args_nos > 0:
+            self.id = args[0]
+        if args_nos > 1:
+            self.__width = args[1]
+        if args_nos > 2:
+            self.__height = args[2]
+        if args_nos > 3:
+            self.__x = args[3]
+        if args_nos > 4:
+            self.__y = args[4]
+        for key, value in kwargs.items():
+            if key == 'id':
+                self.id = value
+            if key == 'width':
+                self.__width = value
+            if key == 'height':
+                self.__height = value
+            if key == 'x':
+                self.__x = value
+            if key == 'y':
+                self.__y = value
