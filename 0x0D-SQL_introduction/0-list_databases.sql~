@@ -1,0 +1,2 @@
+-- my first sql trial
+mysql -u username -p -e 'show databases;'
