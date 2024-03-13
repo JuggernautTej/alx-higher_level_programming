@@ -1,2 +1,2 @@
 -- I list tables in a database
-SHOW TABLES FROM mysql
+SHOW TABLES FROM hbtn_0c_0
