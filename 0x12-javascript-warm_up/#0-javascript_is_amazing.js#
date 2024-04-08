@@ -1,0 +1,7 @@
+#!/usr/bin/node
+
+myVar = "JavaScript is amazing";
+function task1Name() {
+    console.log(myVar);
+}
+task1Name();
