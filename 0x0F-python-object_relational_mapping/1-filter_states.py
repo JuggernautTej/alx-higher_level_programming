@@ -18,7 +18,8 @@ if __name__ == "__main__":
         sys.exit(1)
 
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cur.execute(
+        "SELECT * FROM states WHERE name LIKE 'N%' ORDER BY state.id ASC")
     rows = cur.fetchall()
 
     for line in rows:
