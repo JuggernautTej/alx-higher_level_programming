@@ -10,7 +10,7 @@ if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
     db_name = sys.argv[3]
-    db = "mysql+mysqldb://{}:{}@localhost/{}"\
+    db = "mysql+mysqldb://{}:{}@localhost:3306/{}"\
         .format(username, password, db_name)
     engine = create_engine(db, echo=True)
     Session = sessionmaker(bind=engine)
