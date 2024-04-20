@@ -12,9 +12,9 @@ if __name__ == "__main__":
     password = sys.argv[2]
     db_name = sys.argv[3]
 # Created the SQLAlchemy engine
-engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}"
-.format(username, password, db_name), echo=True)
-# Created a session 
+db = "mysql+mysqldb://{}:{}@localhost/{}".format(username, password, db_name)
+engine = create_engine(db, echo=True)
+# Created a session
 Session = sessionmaker(bind=engine)
 
 session = Session()
