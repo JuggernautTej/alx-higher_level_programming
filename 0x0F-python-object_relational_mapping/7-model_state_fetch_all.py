@@ -12,7 +12,7 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
     db = "mysql+mysqldb://{}:{}@localhost:3306/{}"\
         .format(username, password, db_name)
-    engine = create_engine(db, echo=True)
+    engine = create_engine(db, pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
     for objects in session.query(State).order_by(State.id):
