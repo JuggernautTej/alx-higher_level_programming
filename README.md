@@ -1,3 +1,3 @@
-# PYTHON-OBJECT-RELATIONAL-MAPPING
+# ALX HIGH LEVEL PROGRAMMING
 
-This houses the tasks on the Python ORM
+This repository contains the tasks for learning high level programs such as Python and Java Script along with other associated programs like SQL.
