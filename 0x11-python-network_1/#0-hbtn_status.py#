@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+from urllib.request import get, urlopen
+
+with urlopen('https://alx-intranet.hbtn.io/status') as response:
+    body = response.read()
+print (body)
