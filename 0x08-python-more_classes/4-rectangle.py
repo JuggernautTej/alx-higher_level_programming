@@ -80,7 +80,7 @@ class Rectangle:
                 if column < self.__height - 1:
                     result += "\n"
             return result
-    
+
     def __repr__(self) -> str:
         """This returns a string representation of the rectangle to be
         able to recreate a new instance by using eval function"""
