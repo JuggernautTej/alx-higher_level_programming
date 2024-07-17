@@ -85,7 +85,7 @@ class Rectangle:
         """This returns a string representation of the rectangle to be
         able to recreate a new instance by using eval function"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
-    
+
     def __del__(self):
         """This method is called when an instance of the class is about
         to be destroyed"""
