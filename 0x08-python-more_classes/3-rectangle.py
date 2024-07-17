@@ -50,8 +50,9 @@ class Rectangle:
     def height(self, value):
         if not (isinstance(value, int)):
             raise TypeError("height must be an integer")
-        if height < 0:
+        if value < 0:
             raise ValueError("height must be >= 0")
+        self.__height = value
 
     def area(self):
         """This method returns the rectangle area"""
@@ -73,6 +74,9 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return result
         else:
-            for i in range(self.__height):
-                result += '#' * self.__width + '\n'
-                return result
+            for column in range(self.__height):
+                for row in range(self.__width):
+                    result += "#"
+                if column < self.__height - 1:
+                    result += "\n"
+            return result
